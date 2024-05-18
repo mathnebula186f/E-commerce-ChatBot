@@ -1,0 +1,656 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "Hi there",
+          "Hey there",
+          "Greetings",
+          "How's it going?",
+          "Howdy"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye",
+          "Catch you later",
+          "See ya",
+          "Farewell",
+          "Talk to you later",
+          "Bye bye",
+          "Have a good one",
+          "Later"
+        ],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "That's helpful",
+          "Thank's a lot!",
+          "Much appreciated",
+          "Thanks a bunch",
+          "Thanks a ton",
+          "Thanks so much",
+          "Thanks very much",
+          "I appreciate it"
+        ],
+        "responses": [
+          "Happy to help!",
+          "Any time!",
+          "My pleasure"
+        ]
+      },
+      {
+        "tag": "items",
+        "patterns": [
+          "Which items do you have?",
+          "What kinds of items are there?",
+          "What do you sell?",
+          "What products do you offer?",
+          "What do you have in stock?",
+          "What are you selling?",
+          "What can I buy?",
+          "Show me your products",
+          "What merchandise do you have?",
+          "What inventory do you carry?"
+        ],
+        "responses": [
+          "We sell a variety of products including electronics, clothing, and home goods.",
+          "Our store offers a wide range of items from different categories like electronics, fashion, and home decor."
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?",
+          "What payment methods do you accept?",
+          "How can I pay?",
+          "What forms of payment do you take?",
+          "Do you accept debit cards?",
+          "Can I use my credit card?",
+          "Is Paypal accepted?"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard, American Express, and Paypal.",
+          "We accept most major credit cards, and Paypal."
+        ]
+      },
+      {
+        "tag": "delivery",
+        "patterns": [
+          "How long does delivery take?",
+          "How long does shipping take?",
+          "When do I get my delivery?",
+          "Delivery time",
+          "Shipping duration",
+          "When will my order arrive?",
+          "Delivery timeframe",
+          "Shipping time",
+          "How long for delivery?",
+          "How long for shipping?"
+        ],
+        "responses": [
+          "Delivery takes 2-4 days for standard shipping.",
+          "Shipping takes 2-4 days for standard delivery."
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?",
+          "Make me laugh",
+          "Say something funny",
+          "Do you have any jokes?",
+          "Got any jokes?",
+          "Any funny stories?",
+          "Can you make me laugh?",
+          "Tell me a funny story"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      },
+      {
+        "tag": "return_policy",
+        "patterns": [
+          "What is your return policy?",
+          "How can I return an item?",
+          "Can I return a product?",
+          "Return policy",
+          "How do returns work?",
+          "What are your return guidelines?",
+          "Can I get a refund?",
+          "How to return a purchase?",
+          "What's your return procedure?",
+          "Can I send back a product?"
+        ],
+        "responses": [
+          "You can return any item within 30 days of purchase.",
+          "Our return policy allows returns within 30 days with a receipt."
+        ]
+      },
+      {
+        "tag": "order_status",
+        "patterns": [
+          "Where is my order?",
+          "Can I check my order status?",
+          "Order status",
+          "Track my order",
+          "What's the status of my order?",
+          "Order tracking",
+          "Is my order on the way?",
+          "How is my order progressing?",
+          "Where's my package?",
+          "Check order status"
+        ],
+        "responses": [
+          "You can check your order status in your account under 'Orders'.",
+          "Please provide your order number to check the status."
+        ]
+      },
+      {
+        "tag": "store_hours",
+        "patterns": [
+          "What are your store hours?",
+          "When are you open?",
+          "Store hours",
+          "Opening hours",
+          "When do you close?",
+          "What time do you open?",
+          "Business hours",
+          "Working hours",
+          "What time do you close?",
+          "Store opening times"
+        ],
+        "responses": [
+          "Our store is open from 9 AM to 9 PM, Monday to Saturday.",
+          "We are open from 9 AM to 9 PM, Monday to Saturday."
+        ]
+      },
+      {
+        "tag": "contact_info",
+        "patterns": [
+          "How can I contact you?",
+          "What is your contact number?",
+          "Contact information",
+          "Customer service contact",
+          "How do I get in touch?",
+          "Contact details",
+          "How can I reach you?",
+          "Your contact info",
+          "Phone number to contact",
+          "Customer service phone"
+        ],
+        "responses": [
+          "You can contact us at (123) 456-7890 or email us at support@example.com.",
+          "Reach us at (123) 456-7890 or support@example.com."
+        ]
+      },
+      {
+        "tag": "location",
+        "patterns": [
+          "Where are you located?",
+          "What is your address?",
+          "Location",
+          "Store address",
+          "Where can I find you?",
+          "What is your physical address?",
+          "Store location",
+          "Where is your store?",
+          "Address details",
+          "How do I get to your store?"
+        ],
+        "responses": [
+          "We are located at 123 Main Street, Anytown, USA.",
+          "Our address is 123 Main Street, Anytown, USA."
+        ]
+      },
+      {
+        "tag": "discounts",
+        "patterns": [
+          "Do you have any discounts?",
+          "Current discounts",
+          "Are there any promotions?",
+          "Any sales?",
+          "Discounts available?",
+          "Do you have any deals?",
+          "Are there any offers?",
+          "Special discounts",
+          "Current deals",
+          "Any discount codes?"
+        ],
+        "responses": [
+          "We have a 20% discount on all items this week.",
+          "Check out our promotions page for current discounts."
+        ]
+      },
+      {
+        "tag": "bulk_orders",
+        "patterns": [
+          "Can I place a bulk order?",
+          "Do you offer bulk pricing?",
+          "Bulk orders",
+          "Wholesale orders",
+          "Order in bulk",
+          "Bulk order discounts?",
+          "Can I get a discount for bulk orders?",
+          "Buying in bulk",
+          "Wholesale pricing",
+          "Large quantity order"
+        ],
+        "responses": [
+          "Yes, we offer bulk ordering options. Please contact our sales team for more details.",
+          "For bulk orders, reach out to our sales department at sales@example.com."
+        ]
+      },
+      {
+        "tag": "technical_support",
+        "patterns": [
+          "I need technical support",
+          "My product is not working",
+          "Technical issue",
+          "Product support",
+          "Help with product",
+          "Technical assistance",
+          "Support with my purchase",
+          "Having a problem with my product",
+          "Technical help needed",
+          "Product issue"
+        ],
+        "responses": [
+          "Please visit our support page or contact technical support at techsupport@example.com.",
+          "Our technical support team can assist you at techsupport@example.com."
+        ]
+      },
+      {
+        "tag": "product_warranty",
+        "patterns": [
+          "Is there a warranty on your products?",
+          "Product warranty",
+          "Do your products come with a warranty?",
+          "Warranty details",
+          "Are your products guaranteed?",
+          "Do you offer warranties?",
+          "Warranty information",
+          "How long is the warranty?",
+          "Warranty period",
+          "Do you have product guarantees?"
+        ],
+        "responses": [
+          "All our products come with a one-year warranty.",
+          "We offer a one-year warranty on all products."
+        ]
+      },
+      {
+        "tag": "custom_orders",
+        "patterns": [
+          "Can I place a custom order?",
+          "Do you take custom orders?",
+          "Custom orders",
+          "Made-to-order items",
+          "Special order",
+          "Personalized orders",
+          "Custom product request",
+          "Can you customize products?",
+          "Order customization",
+          "Custom order details"
+        ],
+        "responses": [
+          "Yes, we do custom orders. Please contact our customer service for more information.",
+          "For custom orders, please reach out to our customer service team."
+        ]
+      },
+      {
+        "tag": "shipping_cost",
+        "patterns": [
+          "How much is shipping?",
+          "Shipping cost",
+          "What are the shipping charges?",
+          "Cost of shipping",
+          "Shipping fees",
+          "Delivery charges",
+          "How much to ship?",
+          "What will shipping cost me?",
+          "Shipping price",
+          "Charges for shipping"
+        ],
+        "responses": [
+          "Shipping is free for orders over $50.",
+          "For orders under $50, shipping is $5.99."
+        ]
+      },
+      {
+        "tag": "product_recommendation",
+        "patterns": [
+          "Can you recommend a product?",
+          "What do you recommend?",
+          "Product suggestion",
+          "Suggest a product",
+          "What should I buy?",
+          "Product recommendations",
+          "Best products?",
+          "Which product is good?",
+          "Advice on products",
+          "Recommend something"
+        ],
+        "responses": [
+          "Sure, what are you looking for? We have a wide range of products.",
+          "Please tell us more about what you need, and we can recommend a product."
+        ]
+      },
+      {
+        "tag": "account_help",
+        "patterns": [
+          "I need help with my account",
+          "Account issues",
+          "Help with account",
+          "Account assistance",
+          "My account is not working",
+          "Problem with my account",
+          "Account support",
+          "Issues with my profile",
+          "Account help needed",
+          "Can't access my account"
+        ],
+        "responses": [
+          "Sure, what issue are you experiencing with your account?",
+          "We can help with any account-related issues. Please provide more details."
+        ]
+      },
+      {
+        "tag": "refund_policy",
+        "patterns": [
+          "What is your refund policy?",
+          "How can I get a refund?",
+          "Can I get a refund?",
+          "Refund policy",
+          "How do refunds work?",
+          "Refund guidelines",
+          "Can I return for a refund?",
+          "Refund process",
+          "Refund procedure",
+          "What are the refund rules?"
+        ],
+        "responses": [
+          "You can request a refund within 30 days of purchase.",
+          "Our refund policy allows refunds within 30 days with a receipt."
+        ]
+      },
+      {
+        "tag": "cancel_order",
+        "patterns": [
+          "How can I cancel my order?",
+          "Cancel my order",
+          "Order cancellation",
+          "Can I cancel my order?",
+          "Cancel an order",
+          "How to cancel my purchase?",
+          "Order cancelation process",
+          "Stopping my order",
+          "Can I stop my order?",
+          "Cancel purchase"
+        ],
+        "responses": [
+          "You can cancel your order within 24 hours of placing it.",
+          "To cancel your order, please go to your account and select the order you wish to cancel."
+        ]
+      },
+      {
+        "tag": "exchange_policy",
+        "patterns": [
+          "What is your exchange policy?",
+          "Can I exchange an item?",
+          "Exchange policy",
+          "How to exchange a product?",
+          "Item exchange",
+          "How do exchanges work?",
+          "Can I swap my purchase?",
+          "Exchange procedure",
+          "Product exchange guidelines",
+          "How to return for exchange?"
+        ],
+        "responses": [
+          "You can exchange any item within 30 days of purchase.",
+          "Our exchange policy allows exchanges within 30 days with a receipt."
+        ]
+      },
+      {
+        "tag": "loyalty_program",
+        "patterns": [
+          "Do you have a loyalty program?",
+          "Loyalty program details",
+          "How does your loyalty program work?",
+          "Loyalty rewards",
+          "Customer loyalty program",
+          "Rewards program",
+          "Loyalty points system",
+          "Can I earn points?",
+          "Loyalty benefits",
+          "Customer rewards"
+        ],
+        "responses": [
+          "Yes, we have a loyalty program where you earn points for every purchase.",
+          "Our loyalty program offers points for purchases that can be redeemed for discounts."
+        ]
+      },
+      {
+        "tag": "gift_cards",
+        "patterns": [
+          "Do you sell gift cards?",
+          "Can I buy a gift card?",
+          "Gift card purchase",
+          "Gift cards",
+          "Buy gift vouchers",
+          "Purchase gift certificates",
+          "Are gift cards available?",
+          "Do you have gift vouchers?",
+          "Can I get a gift card?",
+          "Gift card options"
+        ],
+        "responses": [
+          "Yes, we offer gift cards in various denominations.",
+          "You can purchase gift cards from our website."
+        ]
+      },
+      {
+        "tag": "affiliate_program",
+        "patterns": [
+          "Do you have an affiliate program?",
+          "Affiliate program details",
+          "How can I join your affiliate program?",
+          "Affiliate marketing",
+          "Affiliate partnership",
+          "Become an affiliate",
+          "Affiliate program information",
+          "How to join affiliate program?",
+          "Affiliate opportunities",
+          "Join affiliate network"
+        ],
+        "responses": [
+          "Yes, we have an affiliate program. Please visit our affiliate page for more details.",
+          "You can join our affiliate program by signing up on our website."
+        ]
+      },
+      {
+        "tag": "product_availability",
+        "patterns": [
+          "Is this product available?",
+          "Product availability",
+          "Is this item in stock?",
+          "Stock status",
+          "Do you have this product?",
+          "Availability of this item?",
+          "Is this product in stock?",
+          "Is this item available now?",
+          "Check product availability",
+          "Can I buy this now?"
+        ],
+        "responses": [
+          "Please check the product page for availability status.",
+          "You can see the stock status on the product page."
+        ]
+      },
+      {
+        "tag": "subscription_service",
+        "patterns": [
+          "Do you have a subscription service?",
+          "Subscription service details",
+          "How does your subscription service work?",
+          "Subscribe to products",
+          "Product subscription",
+          "Subscription options",
+          "Can I subscribe for regular deliveries?",
+          "Subscription service information",
+          "Sign up for subscription",
+          "Subscribe and save"
+        ],
+        "responses": [
+          "Yes, we offer a subscription service for regular deliveries of certain products.",
+          "Our subscription service allows you to receive products at regular intervals with a discount."
+        ]
+      },
+      {
+        "tag": "sustainability",
+        "patterns": [
+          "Are your products sustainable?",
+          "Sustainability practices",
+          "Eco-friendly products",
+          "Sustainable sourcing",
+          "Environmentally friendly products",
+          "Green products",
+          "Sustainable production",
+          "Eco-conscious items",
+          "Sustainable business practices",
+          "Eco-friendly initiatives"
+        ],
+        "responses": [
+          "We are committed to sustainability and offer a range of eco-friendly products.",
+          "Our products are sourced sustainably, and we aim to minimize our environmental impact."
+        ]
+      },
+      {
+        "tag": "corporate_sales",
+        "patterns": [
+          "Do you offer corporate sales?",
+          "Corporate sales program",
+          "Bulk orders for businesses",
+          "Business sales",
+          "Corporate purchasing",
+          "Large orders for companies",
+          "Corporate sales details",
+          "Business order inquiries",
+          "Corporate sales information",
+          "Company bulk orders"
+        ],
+        "responses": [
+          "Yes, we offer corporate sales. Please contact our corporate sales team for more details.",
+          "For corporate sales, please reach out to our business sales department."
+        ]
+      },
+      {
+        "tag": "partnerships",
+        "patterns": [
+          "Do you offer partnership opportunities?",
+          "Business partnerships",
+          "Partner with us",
+          "Partnership details",
+          "Collaboration opportunities",
+          "Business collaborations",
+          "Partnering options",
+          "How can we partner?",
+          "Partnership inquiries",
+          "Corporate partnerships"
+        ],
+        "responses": [
+          "Yes, we are open to partnership opportunities. Please contact our business development team for more information.",
+          "For partnership inquiries, please email us at partnerships@example.com."
+        ]
+      },
+      {
+        "tag": "product_customization",
+        "patterns": [
+          "Can I customize this product?",
+          "Product customization options",
+          "Customized products",
+          "Custom product details",
+          "Can you personalize this?",
+          "Product personalization",
+          "Customizable items",
+          "How to customize a product?",
+          "Custom options available?",
+          "Personalize my product"
+        ],
+        "responses": [
+          "Yes, we offer customization options for many of our products. Please check the product page for details.",
+          "You can customize products by selecting the customization options on the product page."
+        ]
+      },
+      {
+        "tag": "security_privacy",
+        "patterns": [
+          "How do you protect my data?",
+          "Data security",
+          "Privacy policy",
+          "Data protection",
+          "Is my information safe?",
+          "How secure is my data?",
+          "Privacy protection",
+          "Keeping my data safe",
+          "Security measures",
+          "Protecting user information"
+        ],
+        "responses": [
+          "We take your privacy seriously and use industry-standard measures to protect your data.",
+          "Please review our privacy policy for more information on how we protect your data."
+        ]
+      },
+      {
+        "tag": "user_feedback",
+        "patterns": [
+          "How can I provide feedback?",
+          "User feedback",
+          "Submit a review",
+          "Give feedback",
+          "Leave a review",
+          "How to give feedback?",
+          "Feedback process",
+          "Provide your opinion",
+          "Send feedback",
+          "Share your thoughts"
+        ],
+        "responses": [
+          "We appreciate your feedback! Please visit our feedback page to submit your comments.",
+          "You can leave a review on the product page or contact our customer service with your feedback."
+        ]
+      }
+    ]
+  }
+  
