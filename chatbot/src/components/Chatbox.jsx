@@ -19,7 +19,7 @@ const Chatbox = () => {
     
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/predict', {
+      const response = await fetch('https://e-commerce-chatbot.onrender.com/predict', {
         method: 'POST',
         body: JSON.stringify({ message:input }),
         mode: 'cors',
